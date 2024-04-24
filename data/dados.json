@@ -1,0 +1,66 @@
+{
+  "plantas": [
+    {
+      "id": 1,
+      "nome": "Orquídea",
+      "especie": "Phalaenopsis",
+      "Familia": "Jardim",
+      "descricao": "Orquídea de cores variadas, floresce na primavera.",
+      "imagens": [
+        {
+          "id": 1,
+          "url": "https://i.pinimg.com/564x/8c/d0/69/8cd0692599299bbe4db0025abd675cca.jpg",
+          "descricaoimg": "Orquídea florescendo"
+        },
+        {
+          "id": 2,
+          "url": "https://i.pinimg.com/474x/2e/f5/bd/2ef5bd25ad1dc262556cc1221c7411e0.jpg",
+          "descricaoimg": "Orquídea em vaso"
+        },
+        {
+          "id": 3,
+          "url": "https://i.pinimg.com/474x/98/5b/20/985b201a0e11b03c992d6de2f7178e48.jpg",
+          "descricaoimg": "Orquídea em jardim"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Rosa",
+      "especie": "Rosa rugosa",
+      "Familia": "Vaso",
+      "descricao": "Rosa de pétalas rugosas, ideal para jardins e vasos.",
+      "imagens": [
+        {
+          "id": 4,
+          "url": "https://i.pinimg.com/474x/7c/ad/ac/7cadacdfef85591112b1b31963147e4e.jpg",
+          "descricaoimg": "Rosa vermelha"
+        },
+        {
+          "id": 5,
+          "url": "https://i.pinimg.com/474x/c5/5c/a7/c55ca73f1ed2ed2f06aa3f547eff741e.jpg",
+          "descricaoimg": "Rosa branca"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Suculenta",
+      "especie": "Echeveria",
+      "Familia": "Estufa",
+      "descricao": "Suculenta de fácil cuidado, cresce bem em ambientes ensolarados.",
+      "imagens": [
+        {
+          "id": 6,
+          "url": "https://i.pinimg.com/474x/2d/6b/36/2d6b36b9f50334e3a65db41a4acd87e4.jpg",
+          "descricaoimg": "Suculenta em vaso"
+        },
+        {
+          "id": 7,
+          "url": "https://i.pinimg.com/474x/bb/ca/27/bbca2700f04dcb7427f81c4c69c0baec.jpg",
+          "descricaoimg": "Suculenta no jardim"
+        }
+      ]
+    }
+  ]
+}

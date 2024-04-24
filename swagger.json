@@ -1,0 +1,138 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Catálogo de Plantas",
+      "version": "1.0.0",
+      "description": "API para cadastro de plantas"
+    },
+    "paths": {
+      "/plantas": {
+        "get": {
+          "summary": "Obter a lista de plantas",
+          "responses": {
+            "200": {
+              "description": "Lista de plantas retornada com sucesso"
+            }
+          }
+        },
+        "post": {
+          "summary": "Criar uma nova planta",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planta"
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Planta criada com sucesso"
+            },
+            "400": {
+              "description": "Dados inválidos fornecidos"
+            }
+          }
+        }
+      },
+      "/plantas/{id}": {
+        "get": {
+          "summary": "Obter informações de uma planta pelo ID",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Informações da planta retornadas com sucesso"
+            },
+            "404": {
+              "description": "Planta não encontrada"
+            }
+          }
+        },
+        "put": {
+          "summary": "Atualizar informações de uma planta pelo ID",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              }
+            }
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planta"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Informações da planta atualizadas com sucesso"
+            },
+            "404": {
+              "description": "Planta não encontrada"
+            }
+          }
+        },
+        "delete": {
+          "summary": "Excluir uma planta pelo ID",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              }
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "Planta excluída com sucesso"
+            },
+            "404": {
+              "description": "Planta não encontrada"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Planta": {
+          "type": "object",
+          "properties": {
+            "nome": {
+              "type": "string"
+            },
+            "especie": {
+              "type": "string"
+            },
+            "familia": {
+              "type": "string"
+            },
+            "descricao": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+  

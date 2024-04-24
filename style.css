@@ -1,0 +1,157 @@
+body {
+  background-color: #ffc1e1;
+  font-family: 'Kaushan Script';
+}
+
+.navbar {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e88ebc;
+}
+
+.content {
+  padding: 20px;
+}
+
+.fileira-superior .planta {
+  margin-right: 140px; /* fotos */
+}
+
+.plantas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.fileira-inferior {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.planta {
+  margin: 0 10px;
+  text-align: center;
+}
+
+
+
+.imagem-planta {
+  cursor: pointer;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 13%;
+}
+
+.botoes {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn-editar,
+.btn-deletar {
+  margin-right: 10px;
+}
+
+.info-planta {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+
+.editar-form {
+  display: none;
+}
+
+.editar-form.visivel {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-confirmar,
+.btn-cancelar {
+  margin-right: 10px;
+}
+
+.planta p {
+  color: #ffc1e1;
+}
+
+
+.planta h2 {
+  color: white; /* Cor do texto */
+  font-size: 1.5em; /* Tamanho da font*/
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  display: inline-block; /*  largura e altura */
+  padding: 5px 10px; /* Espaçamento interno */
+  background-color: #e88ebc; /* Fundo  */
+  border: 2px solid #e88ebc; /* Borda */
+  border-radius: 5px; /* Borda*/
+}
+
+
+.nome-planta {
+  color: white; /* Cor do texto*/
+  font-size: 1.5em; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  display: inline-block; /*largura e altura */
+  padding: 5px 10px; /* Espaçamento interno */
+  background-color: #e88ebc; /* Fundo*/
+  border: 2px solid #e88ebc; /* Bord*/
+  border-radius: 5px; /* Borda arredondada */
+}
+
+
+
+
+/* Estilo para os botões de editar e deletar */
+.btn-editar,
+.btn-deletar {
+    background-color: #e88ebc; /* Fundo rosa forte */
+    border: 2px solid #e88ebc; /* Borda rosa forte */
+    color: white; /* Texto branco */
+    display: inline-block; /* Permite definir largura e altura */
+    padding: 5px 10px; /* Espaçamento interno */
+    margin-right: 10px; /* Espaçamento direita */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+/* Estilo hover para os botões de editar e deletar */
+.btn-editar:hover,
+.btn-deletar:hover {
+    background-color: #ffffff; /* Fundo branco ao passar o mouse */
+    color: #e88ebc; /* Texto rosa forte ao passar o mouse */
+}
+
+
+#form-adicionar button[type="submit"] {
+  background-color: #ffffff; /* Fundo branco */
+  border: 2px solid #ffffff; /* Borda branca */
+  color: #000000; /* Texto preto */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+/* Estilo hover para o botão Adicionar */
+#form-adicionar button[type="submit"]:hover {
+  background-color: #cccccc; /* Fundo cinza claro ao passar o mouse */
+  color: #ffffff; /* Texto branco ao passar o mouse */
+}

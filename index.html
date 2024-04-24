@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Plantas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Catálogo de Plantas</h1>
+
+        <form id="form-adicionar">
+            <h2>Adicionar Plantas</h2>
+            <input type="text" id="nome-planta" placeholder="Nome da Planta" required>
+            <input type="text" id="especie-planta" placeholder="Espécie" required>
+            <input type="text" id="familia-planta" placeholder="Família" required>
+            <input type="text" id="url-imagem" placeholder="URL da Imagem" required> <!-- Novo campo para a URL da imagem -->
+            <textarea id="descricao-planta" placeholder="Descrição" required></textarea>
+            <button type="submit" id="btn-adicionar">Adicionar</button> <!-- Botão de Adicionar -->
+        </form>
+
+    </div>
+
+
+
+    <div class="content">
+        <div class="plantas">
+            <div class="fileira-superior">
+                <div class="planta" id="orquidea1">
+                    <p>Espécie: E. aureum</p>
+                    <p>Família: Araceae</p>
+                    <p>Descrição: Epipremnum aureum, conhecida pelos nomes comuns de jibóia ou hera-do-diabo, é uma planta da família das Araceae, originária das Ilhas Salomão. A espécie é uma trepadeira sarmentosa, crescendo até 10 m de comprimento, com flores insignificantes e propagação por estaquia de ramos. É uma espécie de planta folhosa..</p>
+                    <h2>Epipremnum aureum</h2>
+                    <img class="imagem-planta" src="https://i.pinimg.com/474x/8a/e9/d4/8ae9d4dd1a4f85c86ff5c38b12c31383.jpg"
+                        alt="Epipremnum aureum">
+                    <div class="botoes">
+                        <button class="btn-editar">Editar</button>
+                        <button class="btn-deletar">Deletar</button>
+                    </div>
+                </div>   
+
+                <div class="planta" id="orquidea2">
+                    <p>Espécie: N. nucifera</p>
+                    <p>Família: Nelumbonaceae</p>
+                    <p>Descrição: Nelumbo nucifera é uma planta aquática da gênero Nelumbo, conhecida popularmente como lótus, flor-de-lótus, loto-índico e lótus-índico. Apesar disto, esta planta não integra a família Nymphaeaceae, onde estão classificados a maioria dos lótus, fazendo parte da família Nelumbonaceae..</p>
+                    <h2>Flor de lótus</h2>
+                    <img class="imagem-planta" src="https://i.pinimg.com/736x/e5/8b/ce/e58bce09593dc577e1c88fbbd99095d0.jpg"
+                        alt="Orquídea">
+                    <div class="botoes">
+                        <button class="btn-editar">Editar</button>
+                        <button class="btn-deletar">Deletar</button>
+                    </div>
+                </div>
+
+                <div class="planta" id="orquidea3">
+                    <p>Espécie: Gênero Dahlias</p>
+                    <p>Família: Asteraceae</p>
+                    <p>Descrição: Dahlia pinnata é uma espécie do gênero Dahlia, família Asteraceae, com o nome comum de dália de jardim. É a espécie-tipo do gênero e é amplamente cultivada.</p>
+                    <h2>
+                      Dahlia pinnata
+                      </h2>
+                    <img class="imagem-planta" src="https://i.pinimg.com/474x/98/5b/20/985b201a0e11b03c992d6de2f7178e48.jpg"
+                        alt="Orquídea">
+                    <div class="botoes">
+                        <button class="btn-editar">Editar</button>
+                        <button class="btn-deletar">Deletar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fileira-inferior">
+
+                <div class="planta" id="hibisco">
+                    <p>Espécie: Drosera</p>
+                    <p>Família: Nepenthaceae, Sarraceniaceae, Droseraceae e Lentibulariaceae.</p>
+                    <p>Descrição:Plantas carnívoras ou plantas insetívoras são plantas que possuem a capacidade de atrair pequenos animais, incluindo insetos, aracnídeos e até mesmo anfíbios, répteis e aves, capturar, digerir e utilizar os nutrientes de suas presas.</p>
+                    <h2> Planta carnívora </h2>
+                    <img class="imagem-planta" src="https://i.pinimg.com/474x/c5/5c/a7/c55ca73f1ed2ed2f06aa3f547eff741e.jpg"
+                        alt="Hibisco">
+                    <div class="botoes">
+                        <button class="btn-editar">Editar</button>
+                        <button class="btn-deletar">Deletar</button>
+                    </div>
+                </div> 
+
+                <div class="planta" id="suculenta">
+                    <p>Espécie: Echeveria</p>
+                    <p>Família: Suculentas</p>  
+                    <p>Descrição: Uma planta que pode resistir e durar vários anos! Para a maioria dos ambientes, nossa recomendação é molhar uma vez por mês. Isso permite que o substrato fique bastante seco antes de ser molhado novamente, o que ajuda a impedir a proliferação de fungos nas raízes.</p>
+                    <h2>Echeveria "Ice Cream"</h2>
+                    <img class="imagem-planta" src="https://i.pinimg.com/474x/7c/ad/ac/7cadacdfef85591112b1b31963147e4e.jpg"
+                        alt="Suculenta">
+                    <div class="botoes">
+                        <button class="btn-editar">Editar</button>
+                        <button class="btn-deletar">Deletar</button>
+                    </div>
+                </div>
+
+                <div class="planta" id="lirio">
+                    <p>Espécie: D. trifasciata</p>
+                    <p>Família: Ruscaceae</p>
+                    <p>Descrição:A espada-de-são-jorge, espada-de-santa-bárbara ou espada-de-iansã, também conhecida como língua-de-sogra, rabo-de-lagarto e sanseviéria, é uma planta herbácea de origem africana. Também é importante saber que é uma planta tóxica, e que não deve ser ingerida.</p>
+                    <h2>Espada-de-são-jorge</h2>
+                    <img class="imagem-planta" src="https://i.pinimg.com/564x/bb/3f/66/bb3f66cdd8ec497d874a87eeb7064273.jpg"
+                        alt="Lírio">
+                    <div class="botoes">
+                        <button class="btn-editar">Editar</button>
+                        <button class="btn-deletar">Deletar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
